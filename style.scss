@@ -1,0 +1,137 @@
+// Variables
+$Green: hsl(75, 94%, 57%);
+$White: hsl(0, 0%, 100%);
+$Grey: hsl(0, 0%, 20%);
+$DarkGrey: hsl(0, 0%, 12%);
+$OffBlack: hsl(0, 0%, 8%);
+$Github: #24292e;
+$Linkedin: #0077b5;
+$Twitter: #1dcaff;
+
+// Mixin
+@mixin flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+body {
+  background-color: $OffBlack;
+  height: 100vh;
+  font-family: "inter", sans-serif;
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+  p,
+  ul {
+    font-size: 14px;
+  }
+}
+
+ul,
+li {
+  all: unset;
+}
+
+a {
+  all: unset;
+}
+
+.container {
+  @include flex-center();
+  height: 100%;
+  color: $White;
+}
+
+.card {
+  @include flex-center();
+  background-color: $DarkGrey;
+  border-radius: 10px;
+  padding: 2rem 3rem;
+}
+
+.profile {
+  @include flex-center();
+  gap: 1rem;
+
+  .photo {
+    clip-path: circle();
+
+    img {
+      width: 4.5rem;
+    }
+  }
+  .desc {
+    @include flex-center();
+    justify-content: flex-start;
+    gap: 10px;
+
+    #name {
+      font-weight: 600;
+      font-size: 24px;
+      //   letter-spacing: 1px;
+    }
+    #location {
+      color: $Green;
+      font-weight: 700;
+    }
+    #occupation {
+      margin-top: 1rem;
+    }
+  }
+}
+
+.social-list {
+  @include flex-center();
+  gap: 14px;
+  margin-top: 1rem;
+  width: 100%;
+
+  .account {
+    display: inline-block;
+    text-align: center;
+    background-color: $Grey;
+    width: inherit;
+
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+
+    &#github:hover {
+      background-color: $Github;
+      color: $White;
+    }
+    &#frontend-mentor:hover {
+      background-color: $White;
+      color: $DarkGrey;
+    }
+    &#linkedin:hover {
+      background-color: $Linkedin;
+      color: $White;
+    }
+    &#twitter:hover {
+      background-color: $Twitter;
+      color: $White;
+    }
+    &#instagram:hover {
+      background-color: $White;
+      color: #8a49a1;
+    }
+  }
+  a {
+    display: block;
+    height: 100%;
+    padding: 14px;
+  }
+}
