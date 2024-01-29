@@ -1,5 +1,5 @@
 // Variables
-$Green: hsl(75, 94%, 57%);
+$Brown: #c1a998;
 $White: hsl(0, 0%, 100%);
 $Grey: hsl(0, 0%, 20%);
 $DarkGrey: hsl(0, 0%, 12%);
@@ -58,6 +58,9 @@ a {
   background-color: $DarkGrey;
   border-radius: 10px;
   padding: 2rem 3rem;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 .profile {
@@ -82,7 +85,7 @@ a {
       //   letter-spacing: 1px;
     }
     #location {
-      color: $Green;
+      color: $Brown;
       font-weight: 700;
     }
     #occupation {
@@ -100,33 +103,98 @@ a {
   .account {
     display: inline-block;
     text-align: center;
-    background-color: $Grey;
+    background: $Grey;
     width: inherit;
 
     font-weight: 600;
     border-radius: 8px;
     cursor: pointer;
-    transition: 0.4s ease-in-out;
+    transition: 0.1s ease-in-out;
 
-    &#github:hover {
-      background-color: $Github;
-      color: $White;
+    &#github {
+      &:hover {
+        background: $Github;
+        color: $White;
+        transform: translateY(-3px);
+        box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
+        -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
+      }
+      &:active {
+        background: #181b1e;
+        transform: translateY(0px);;
+        box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+        -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+      }
     }
-    &#frontend-mentor:hover {
-      background-color: $White;
-      color: $DarkGrey;
+    &#frontend-mentor {
+      &:hover {
+        background: $White;
+        color: #718dc1;
+        transform: translateY(-3px);
+        box-shadow: 0px 3px 10px 0px rgba(245, 245, 245, 0.5);
+        -webkit-box-shadow: 0px 3px 10px 0px rgba(245, 245, 245, 0.5);
+        -moz-box-shadow: 0px 3px 10px 0px rgba(245, 245, 245, 0.5);
+      }
+      &:active {
+        background: #bfbfbf;
+        transform: translateY(0px);;
+        box-shadow: 0px 1px 5px 0px rgba(245, 245, 245, 0.5);
+        -webkit-box-shadow: 0px 1px 5px 0px rgba(245, 245, 245, 0.5);
+        -moz-box-shadow: 0px 1px 5px 0px rgba(245, 245, 245, 0.5);
+      }
     }
-    &#linkedin:hover {
-      background-color: $Linkedin;
-      color: $White;
+    &#linkedin {
+      &:hover {
+        background: $Linkedin;
+        color: $White;
+        transform: translateY(-3px);
+        box-shadow: 0px 3px 10px 0px rgba(0, 119, 181, 0.5);
+        -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 119, 181, 0.5);
+        -moz-box-shadow: 0px 3px 10px 0px rgba(0, 119, 181, 0.5);
+      }
+      &:active {
+        background: #005d90;
+        transform: translateY(0px);;
+        box-shadow: 0px 1px 5px 0px rgba(0, 119, 181, 0.5);
+        -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 119, 181, 0.5);
+        -moz-box-shadow: 0px 1px 5px 0px rgba(0, 119, 181, 0.5);
+      }
     }
-    &#twitter:hover {
-      background-color: $Twitter;
-      color: $White;
+    &#twitter {
+      &:hover {
+        background: $Twitter;
+        color: $White;
+        transform: translateY(-3px);
+        box-shadow: 0px 3px 10px 0px rgba(29, 202, 255, 0.5);
+        -webkit-box-shadow: 0px 3px 10px 0px rgba(29, 202, 255, 0.5);
+        -moz-box-shadow: 0px 3px 10px 0px rgba(29, 202, 255, 0.5);
+      }
+      &:active {
+        background: #16a6d1;
+        transform: translateY(0px);;
+        box-shadow: 0px 1px 5px 0px rgba(29, 202, 255, 0.5);
+        -webkit-box-shadow: 0px 1px 5px 0px rgba(29, 202, 255, 0.5);
+        -moz-box-shadow: 0px 1px 5px 0px rgba(29, 202, 255, 0.5);
+      }
     }
-    &#instagram:hover {
-      background-color: $White;
-      color: #8a49a1;
+    &#instagram {
+      &:hover {
+        background: $White;
+        color: #8a49a1;
+        transform: translateY(-3px);
+        box-shadow: 0px 3px 10px 0px rgba(245, 245, 245, 0.5);
+        -webkit-box-shadow: 0px 3px 10px 0px rgba(245, 245, 245, 0.5);
+        -moz-box-shadow: 0px 3px 10px 0px rgba(245, 245, 245, 0.5);
+      }
+      &:active {
+        background: #bfbfbf;
+        transform: translateY(0px);;
+        box-shadow: 0px 1px 5px 0px rgba(245, 245, 245, 0.5);
+        -webkit-box-shadow: 0px 1px 5px 0px rgba(245, 245, 245, 0.5);
+        -moz-box-shadow: 0px 1px 5px 0px rgba(245, 245, 245, 0.5);
+      }
     }
   }
   a {

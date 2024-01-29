@@ -44,6 +44,9 @@ a {
   background-color: hsl(0, 0%, 12%);
   border-radius: 10px;
   padding: 2rem 3rem;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 .profile {
@@ -72,7 +75,7 @@ a {
   font-size: 24px;
 }
 .profile .desc #location {
-  color: hsl(75, 94%, 57%);
+  color: #c1a998;
   font-weight: 700;
 }
 .profile .desc #occupation {
@@ -91,32 +94,87 @@ a {
 .social-list .account {
   display: inline-block;
   text-align: center;
-  background-color: hsl(0, 0%, 20%);
+  background: hsl(0, 0%, 20%);
   width: inherit;
   font-weight: 600;
   border-radius: 8px;
   cursor: pointer;
-  transition: 0.4s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 .social-list .account#github:hover {
-  background-color: #24292e;
+  background: #24292e;
   color: hsl(0, 0%, 100%);
+  transform: translateY(-3px);
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.social-list .account#github:active {
+  background: #181b1e;
+  transform: translateY(0px);
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
 }
 .social-list .account#frontend-mentor:hover {
-  background-color: hsl(0, 0%, 100%);
-  color: hsl(0, 0%, 12%);
+  background: hsl(0, 0%, 100%);
+  color: #718dc1;
+  transform: translateY(-3px);
+  box-shadow: 0px 3px 10px 0px rgba(245, 245, 245, 0.5);
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(245, 245, 245, 0.5);
+  -moz-box-shadow: 0px 3px 10px 0px rgba(245, 245, 245, 0.5);
+}
+.social-list .account#frontend-mentor:active {
+  background: #bfbfbf;
+  transform: translateY(0px);
+  box-shadow: 0px 1px 5px 0px rgba(245, 245, 245, 0.5);
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(245, 245, 245, 0.5);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(245, 245, 245, 0.5);
 }
 .social-list .account#linkedin:hover {
-  background-color: #0077b5;
+  background: #0077b5;
   color: hsl(0, 0%, 100%);
+  transform: translateY(-3px);
+  box-shadow: 0px 3px 10px 0px rgba(0, 119, 181, 0.5);
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 119, 181, 0.5);
+  -moz-box-shadow: 0px 3px 10px 0px rgba(0, 119, 181, 0.5);
+}
+.social-list .account#linkedin:active {
+  background: #005d90;
+  transform: translateY(0px);
+  box-shadow: 0px 1px 5px 0px rgba(0, 119, 181, 0.5);
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 119, 181, 0.5);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(0, 119, 181, 0.5);
 }
 .social-list .account#twitter:hover {
-  background-color: #1dcaff;
+  background: #1dcaff;
   color: hsl(0, 0%, 100%);
+  transform: translateY(-3px);
+  box-shadow: 0px 3px 10px 0px rgba(29, 202, 255, 0.5);
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(29, 202, 255, 0.5);
+  -moz-box-shadow: 0px 3px 10px 0px rgba(29, 202, 255, 0.5);
+}
+.social-list .account#twitter:active {
+  background: #16a6d1;
+  transform: translateY(0px);
+  box-shadow: 0px 1px 5px 0px rgba(29, 202, 255, 0.5);
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(29, 202, 255, 0.5);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(29, 202, 255, 0.5);
 }
 .social-list .account#instagram:hover {
-  background-color: hsl(0, 0%, 100%);
+  background: hsl(0, 0%, 100%);
   color: #8a49a1;
+  transform: translateY(-3px);
+  box-shadow: 0px 3px 10px 0px rgba(245, 245, 245, 0.5);
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(245, 245, 245, 0.5);
+  -moz-box-shadow: 0px 3px 10px 0px rgba(245, 245, 245, 0.5);
+}
+.social-list .account#instagram:active {
+  background: #bfbfbf;
+  transform: translateY(0px);
+  box-shadow: 0px 1px 5px 0px rgba(245, 245, 245, 0.5);
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(245, 245, 245, 0.5);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(245, 245, 245, 0.5);
 }
 .social-list a {
   display: block;
