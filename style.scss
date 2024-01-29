@@ -7,6 +7,7 @@ $OffBlack: hsl(0, 0%, 8%);
 $Github: #24292e;
 $Linkedin: #0077b5;
 $Twitter: #1dcaff;
+$BreakpointTablet: 768px;
 
 // Mixin
 @mixin flex-center {
@@ -14,6 +15,15 @@ $Twitter: #1dcaff;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@mixin tablet-transform {
+  &:hover {
+    transform: unset;
+  }
+  &:active {
+    transform: translateY(3px);
+  }
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
@@ -122,7 +132,7 @@ a {
       }
       &:active {
         background: #181b1e;
-        transform: translateY(0px);;
+        transform: translateY(0px);
         box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
         -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
         -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
@@ -139,7 +149,7 @@ a {
       }
       &:active {
         background: #bfbfbf;
-        transform: translateY(0px);;
+        transform: translateY(0px);
         box-shadow: 0px 1px 5px 0px rgba(245, 245, 245, 0.5);
         -webkit-box-shadow: 0px 1px 5px 0px rgba(245, 245, 245, 0.5);
         -moz-box-shadow: 0px 1px 5px 0px rgba(245, 245, 245, 0.5);
@@ -156,7 +166,7 @@ a {
       }
       &:active {
         background: #005d90;
-        transform: translateY(0px);;
+        transform: translateY(0px);
         box-shadow: 0px 1px 5px 0px rgba(0, 119, 181, 0.5);
         -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 119, 181, 0.5);
         -moz-box-shadow: 0px 1px 5px 0px rgba(0, 119, 181, 0.5);
@@ -173,7 +183,7 @@ a {
       }
       &:active {
         background: #16a6d1;
-        transform: translateY(0px);;
+        transform: translateY(0px);
         box-shadow: 0px 1px 5px 0px rgba(29, 202, 255, 0.5);
         -webkit-box-shadow: 0px 1px 5px 0px rgba(29, 202, 255, 0.5);
         -moz-box-shadow: 0px 1px 5px 0px rgba(29, 202, 255, 0.5);
@@ -190,7 +200,7 @@ a {
       }
       &:active {
         background: #bfbfbf;
-        transform: translateY(0px);;
+        transform: translateY(0px);
         box-shadow: 0px 1px 5px 0px rgba(245, 245, 245, 0.5);
         -webkit-box-shadow: 0px 1px 5px 0px rgba(245, 245, 245, 0.5);
         -moz-box-shadow: 0px 1px 5px 0px rgba(245, 245, 245, 0.5);
@@ -199,7 +209,20 @@ a {
   }
   a {
     display: block;
-    height: 100%;
     padding: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .social-list {
+    .account {
+      &#github,
+      &#frontend-mentor,
+      &#linkedin,
+      &#twitter,
+      &#instagram {
+        @include tablet-transform();
+      }
+    }
   }
 }

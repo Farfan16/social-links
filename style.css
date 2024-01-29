@@ -178,8 +178,16 @@ a {
 }
 .social-list a {
   display: block;
-  height: 100%;
   padding: 14px;
+}
+
+@media (max-width: 768px) {
+  .social-list .account#github:hover, .social-list .account#frontend-mentor:hover, .social-list .account#linkedin:hover, .social-list .account#twitter:hover, .social-list .account#instagram:hover {
+    transform: unset;
+  }
+  .social-list .account#github:active, .social-list .account#frontend-mentor:active, .social-list .account#linkedin:active, .social-list .account#twitter:active, .social-list .account#instagram:active {
+    transform: translateY(3px);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
