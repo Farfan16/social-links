@@ -116,20 +116,20 @@ a {
   -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
 }
-.social-list .account#frontend-mentor:hover {
-  background: hsl(0, 0%, 100%);
-  color: #718dc1;
+.social-list .account#spotify:hover {
+  background: #1db954;
+  color: hsl(0, 0%, 100%);
   transform: translateY(-3px);
-  box-shadow: 0px 3px 10px 0px rgba(245, 245, 245, 0.5);
-  -webkit-box-shadow: 0px 3px 10px 0px rgba(245, 245, 245, 0.5);
-  -moz-box-shadow: 0px 3px 10px 0px rgba(245, 245, 245, 0.5);
+  box-shadow: 0px 3px 10px 0px rgba(29, 185, 84, 0.5);
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(29, 185, 84, 0.5);
+  -moz-box-shadow: 0px 3px 10px 0px rgba(29, 185, 84, 0.5);
 }
-.social-list .account#frontend-mentor:active {
-  background: #bfbfbf;
+.social-list .account#spotify:active {
+  background: #1aa64b;
   transform: translateY(0px);
-  box-shadow: 0px 1px 5px 0px rgba(245, 245, 245, 0.5);
-  -webkit-box-shadow: 0px 1px 5px 0px rgba(245, 245, 245, 0.5);
-  -moz-box-shadow: 0px 1px 5px 0px rgba(245, 245, 245, 0.5);
+  box-shadow: 0px 1px 5px 0px rgba(29, 185, 84, 0.5);
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(29, 185, 84, 0.5);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(29, 185, 84, 0.5);
 }
 .social-list .account#linkedin:hover {
   background: #0077b5;
@@ -182,10 +182,10 @@ a {
 }
 
 @media (max-width: 768px) {
-  .social-list .account#github:hover, .social-list .account#frontend-mentor:hover, .social-list .account#linkedin:hover, .social-list .account#twitter:hover, .social-list .account#instagram:hover {
+  .social-list .account#github:hover, .social-list .account#spotify:hover, .social-list .account#linkedin:hover, .social-list .account#twitter:hover, .social-list .account#instagram:hover {
     transform: unset;
   }
-  .social-list .account#github:active, .social-list .account#frontend-mentor:active, .social-list .account#linkedin:active, .social-list .account#twitter:active, .social-list .account#instagram:active {
+  .social-list .account#github:active, .social-list .account#spotify:active, .social-list .account#linkedin:active, .social-list .account#twitter:active, .social-list .account#instagram:active {
     transform: translateY(3px);
   }
 }

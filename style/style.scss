@@ -7,6 +7,7 @@ $OffBlack: hsl(0, 0%, 8%);
 $Github: #24292e;
 $Linkedin: #0077b5;
 $Twitter: #1dcaff;
+$Spotify: #1db954;
 $BreakpointTablet: 768px;
 
 // Mixin
@@ -138,21 +139,21 @@ a {
         -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
       }
     }
-    &#frontend-mentor {
+    &#spotify {
       &:hover {
-        background: $White;
-        color: #718dc1;
+        background: $Spotify;
+        color: $White;
         transform: translateY(-3px);
-        box-shadow: 0px 3px 10px 0px rgba(245, 245, 245, 0.5);
-        -webkit-box-shadow: 0px 3px 10px 0px rgba(245, 245, 245, 0.5);
-        -moz-box-shadow: 0px 3px 10px 0px rgba(245, 245, 245, 0.5);
+        box-shadow: 0px 3px 10px 0px rgba(29, 185, 84, 0.5);
+        -webkit-box-shadow: 0px 3px 10px 0px rgba(29, 185, 84, 0.5);
+        -moz-box-shadow: 0px 3px 10px 0px rgba(29, 185, 84, 0.5);
       }
       &:active {
-        background: #bfbfbf;
+        background: #1aa64b;
         transform: translateY(0px);
-        box-shadow: 0px 1px 5px 0px rgba(245, 245, 245, 0.5);
-        -webkit-box-shadow: 0px 1px 5px 0px rgba(245, 245, 245, 0.5);
-        -moz-box-shadow: 0px 1px 5px 0px rgba(245, 245, 245, 0.5);
+        box-shadow: 0px 1px 5px 0px rgba(29, 185, 84, 0.5);
+        -webkit-box-shadow: 0px 1px 5px 0px rgba(29, 185, 84, 0.5);
+        -moz-box-shadow: 0px 1px 5px 0px rgba(29, 185, 84, 0.5);
       }
     }
     &#linkedin {
@@ -217,7 +218,7 @@ a {
   .social-list {
     .account {
       &#github,
-      &#frontend-mentor,
+      &#spotify,
       &#linkedin,
       &#twitter,
       &#instagram {
