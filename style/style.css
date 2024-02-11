@@ -1,9 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 /*!
  * Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  * Copyright 2023 Fonticons, Inc.
  */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 .fa {
   font-family: var(--fa-style-family, "Font Awesome 6 Free");
   font-weight: var(--fa-style, 900);
@@ -10340,9 +10340,30 @@ readers do not read off random characters that represent icons */
   content: "\f3f6";
 }
 
+:root {
+  --clr-light: #f9f9f8;
+  --clr-dark: #0d1321;
+  --clr-card: #f5f5f5;
+  --clr-button: #e2dede;
+  --clr-accent: #ae7c1e;
+  --background: var(--clr-light);
+  --foreground: var(--clr-dark);
+}
+
+.darkMode {
+  --clr-light: #141414;
+  --clr-dark: #ffffff;
+  --clr-card: #1f1f1f;
+  --clr-button: #333333;
+  --clr-accent: #ece2d0;
+  --background: var(--clr-light);
+  --foreground: var(--clr-dark);
+}
+
 body {
-  background-color: hsl(0, 0%, 8%);
+  background-color: var(--background);
   height: 100vh;
+  margin: 0;
   font-family: "inter", sans-serif;
 }
 body p,
@@ -10374,7 +10395,6 @@ a {
   justify-content: center;
   align-items: center;
   height: 100%;
-  color: hsl(0, 0%, 100%);
 }
 
 .card {
@@ -10382,7 +10402,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: hsl(0, 0%, 12%);
+  background-color: var(--clr-card);
   border-radius: 10px;
   padding: 2rem 3rem;
   box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
@@ -10396,6 +10416,7 @@ a {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  color: var(--clr-dark);
 }
 .profile .photo {
   clip-path: circle();
@@ -10416,7 +10437,7 @@ a {
   font-size: 24px;
 }
 .profile .desc #location {
-  color: #c1a998;
+  color: var(--clr-accent);
   font-weight: 700;
 }
 .profile .desc #occupation {
@@ -10435,7 +10456,7 @@ a {
 .social-list .account {
   display: inline-block;
   text-align: center;
-  background: hsl(0, 0%, 20%);
+  background: var(--clr-button);
   width: inherit;
   font-weight: 600;
   border-radius: 8px;
